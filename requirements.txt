@@ -1,0 +1,7 @@
+googletrans==4.0.0rc1
+# Optional (for improved AI agents):
+# sentence-transformers provides small embedding models (e.g. all-MiniLM-L6-v2)
+# llama-cpp-python enables local ggml Llama inference (requires a local quantized model file)
+# sentence-transformers
+# llama-cpp-python
+
