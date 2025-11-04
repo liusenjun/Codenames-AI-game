@@ -6,7 +6,6 @@ A micro Python digitalizing the famous board game **Codenames** with AI players.
 
 Codenames is a word-based party game where two teams compete to identify their agents based on one-word clues given by their spymaster.
 
-<img width="600" height="450" alt="image" src="https://github.com/user-attachments/assets/d62fb6be-c312-4d22-851d-90c33e571344" />
 <img width="600" height="430" alt="image" src="https://github.com/user-attachments/assets/119213e4-db9b-4d55-a773-563170688ec6" />
 
 ### 1. Game Objective
@@ -169,6 +168,7 @@ This repository is provided for educational purposes. You may use and adapt it, 
 ---
 
 Enjoy the game — try AI vs AI to watch how the agents perform, or jump into a player mode to compete with or coach the AI!
+
 
 
 
