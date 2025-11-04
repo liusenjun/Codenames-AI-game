@@ -47,7 +47,7 @@ Two teams compete to identify all their team’s "agents" (codenames) on the gam
 - Objective: Teams try to find all their words. Spymasters give one-word clues plus a number (e.g., "ROYAL, 2") that hint which words belong to their team.
 - Guessing: The operative may guess up to `number + 1` times. Revealing an opponent card ends the turn; revealing the assassin causes an immediate loss.
 
-## Mirco Python Codenames AI Game
+## Mirco Python Codenames AI Game 
 
 ### We Have 3 Game Modes
 
@@ -57,16 +57,23 @@ Two teams compete to identify all their team’s "agents" (codenames) on the gam
 
 A small Python implementation of the party game Codenames with AI players.
 
+## How to play (GUI)
+
+1. Start the GUI (`python codenames_gui.py`). The main menu lets you choose a mode:
+   - Player as Field Operative — you guess, AI gives clues.
+   - Player as Spymaster — you give clues (you see the secret board), AI guesses.
+   - AI vs AI — watch two AIs play.
+2. If you choose a player mode you'll be prompted to select RED or BLUE team.
+3. During play:
+   - Click cards to reveal them when it is your turn to guess.
+   - The clue panel shows the current clue and remaining guesses.
+   - Use the "Pass" button (when enabled) to end your guessing early.
+4. History and status are shown on the right side of the GUI. Use "Main Menu" to return at any time.
+
 This repository contains:
 - `codenames.py` — text-based implementation and AI logic.
 - `codenames_gui.py` — modern Tkinter GUI frontend (recommended).
 - `pic/` — optional images (use `bg1.jpg` or similar for the menu background).
-
-## Quick summary of the original board game (brief)
-- Players: two teams (RED and BLUE). Each team has a Spymaster and one or more Field Operatives.
-- Board: 25 words arranged in a 5×5 grid. Each word is secretly assigned to RED, BLUE, NEUTRAL, or ASSASSIN.
-- Objective: Teams try to find all their words. Spymasters give one-word clues plus a number (e.g., "ROYAL, 2") that hint which words belong to their team.
-- Guessing: The operative may guess up to `number + 1` times. Revealing an opponent card ends the turn; revealing the assassin causes an immediate loss.
 
 ## Project overview
 
@@ -116,19 +123,6 @@ If you see errors about missing packages:
 - Install Pillow to enable advanced image handling in the GUI.
 - Install googletrans if you want the translation feature.
 
-## How to play (GUI)
-
-1. Start the GUI (`python codenames_gui.py`). The main menu lets you choose a mode:
-   - Player as Field Operative — you guess, AI gives clues.
-   - Player as Spymaster — you give clues (you see the secret board), AI guesses.
-   - AI vs AI — watch two AIs play.
-2. If you choose a player mode you'll be prompted to select RED or BLUE team.
-3. During play:
-   - Click cards to reveal them when it is your turn to guess.
-   - The clue panel shows the current clue and remaining guesses.
-   - Use the "Pass" button (when enabled) to end your guessing early.
-4. History and status are shown on the right side of the GUI. Use "Main Menu" to return at any time.
-
 ## License & Credits
 
 This repository is provided for educational purposes. You may use and adapt it, but please keep attribution and don't claim the original Codenames IP.
@@ -136,6 +130,7 @@ This repository is provided for educational purposes. You may use and adapt it, 
 ---
 
 Enjoy the game — try AI vs AI to watch how the agents perform, or jump into a player mode to compete with or coach the AI!
+
 
 
 
