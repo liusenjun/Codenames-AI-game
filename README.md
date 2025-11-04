@@ -3,7 +3,10 @@
 This is a micro Python AI game digitalizing the famous board game **Codenames** with AI players.
 
 ### Why I Want to Digitalize this Board Game
-The core of this board game is
+The core of this game is that to find all their team’s words faster than the opponent, the clue giver (Spymaster) needs to abstractly connect as many of their team’s words as possible. They must avoid selecting the opponent’s words or the death word (Assassin) in the process. 
+This abstract connection may rely on various factors, such as cultural context, teammates’ cognitive levels, and mutual understanding. 
+Notably, this ability to link words based on specific scenarios is almost identical to the capabilities of LLMs—even the underlying logic of NLP and LLMs lies in the associations between words.
+Thus, I came up with the idea of playing this game with LLMs. We could act as Operatives to guess the clues given by AI, or play the role of Spymaster and let AI guess the words. Alternatively, we might watch AIs compete against each other.
 
 ## About the Board Game Codenames 🕶
 
@@ -133,6 +136,7 @@ This repository is provided for educational purposes. You may use and adapt it, 
 ---
 
 Enjoy the game — try AI vs AI to watch how the agents perform, or jump into a player mode to compete with or coach the AI!
+
 
 
 
