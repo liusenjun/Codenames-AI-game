@@ -156,11 +156,12 @@ class CodenamesGUI:
         
         # Place player modes first and AI vs AI at the bottom (user preference)
         modes = [
+            ("AI vs AI", "Watch the AI play"),
             ("Player as Field Operative", "You guess, AI gives clues"),
             ("Player as Spymaster", "You give clues, AI guesses"),
             ("AI vs AI", "Watch the AI play")
         ]
-
+        
         for i, (mode_name, description) in enumerate(modes, 1):
             btn = tk.Button(
                 mode_frame,
