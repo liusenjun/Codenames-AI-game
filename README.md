@@ -68,7 +68,7 @@ A small Python implementation of the party game Codenames with AI players.
 2. **Player as Field Operative**: You guess words based on AI-generated clues
 3. **Player as Spymaster**: You provide clues and AI Operative will guess
 
-## How to Run
+### How to Run
 
 1. Start the GUI (`python codenames_gui.py`).
  ```powershell
@@ -105,6 +105,7 @@ The project currently has the following limitations that require further optimiz
 ---
 
 Enjoy the game — try AI vs AI to watch how the agents perform, or jump into a player mode to compete with or coach the AI!
+
 
 
 
