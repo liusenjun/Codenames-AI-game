@@ -1,10 +1,12 @@
 # Codenames AI Game
 
-A micro Python implementation of the famous board game **Codenames** with AI players.
+A micro Python digitalizing the famous board game **Codenames** with AI players.
 
-## About the Board Game Codenames
+## About the Board Game Codenames 🕶
 
 Codenames is a word-based party game where two teams compete to identify their agents based on one-word clues given by their spymaster.
+
+<img width="1200" height="900" alt="image" src="https://github.com/user-attachments/assets/d62fb6be-c312-4d22-851d-90c33e571344" />
 
 ### 1. Game Objective
 Two teams compete to identify all their team’s "agents" (codenames) on the game board before the other team. Avoid the "assassin"—if a team selects the assassin, they lose immediately.
@@ -45,9 +47,10 @@ The game supports three modes:
 
 1. **AI vs AI**: Watch AI spymasters and guessers play against each other
 2. **Player as Field Operative**: You guess words based on AI-generated clues
-# Codenames AI Game
 
-A small Python implementation of the party game Codenames with optional GUI and AI players.
+## Mirco Python Codenames AI Game
+
+A small Python implementation of the party game Codenames with AI players.
 
 This repository contains:
 - `codenames.py` — text-based implementation and AI logic.
@@ -165,6 +168,7 @@ This repository is provided for educational purposes. You may use and adapt it, 
 ---
 
 Enjoy the game — try AI vs AI to watch how the agents perform, or jump into a player mode to compete with or coach the AI!
+
 
 
 
