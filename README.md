@@ -1,6 +1,6 @@
 # Codenames AI Game
 
-A micro Python digitalizing the famous board game **Codenames** with AI players.
+This is a micro Python AI game digitalizing the famous board game **Codenames** with AI players.
 
 ## About the Board Game Codenames 🕶
 
@@ -130,6 +130,7 @@ This repository is provided for educational purposes. You may use and adapt it, 
 ---
 
 Enjoy the game — try AI vs AI to watch how the agents perform, or jump into a player mode to compete with or coach the AI!
+
 
 
 
