@@ -6,14 +6,38 @@ A micro Python implementation of the famous board game **Codenames** with AI pla
 
 Codenames is a word-based party game where two teams compete to identify their agents based on one-word clues given by their spymaster.
 
-### Game Rules
+### 1. Game Objective
+Two teams compete to identify all their team’s "agents" (codenames) on the game board before the other team. Avoid the "assassin"—if a team selects the assassin, they lose immediately.
 
-- **Board**: 25 words arranged in a 5x5 grid
-- **Teams**: RED team (9 words) and BLUE team (8 words) - one team has 9, the other 8 depending on who starts
-- **Neutral Cards**: 7 neutral words that belong to neither team
-- **Assassin**: 1 assassin word - if revealed, that team immediately loses
-- **Spymasters**: AI players that give clues (word + number) to connect their team's words
-- **Guessers**: AI players that make guesses based on the clues
+### 2. Setup
+- Divide players into two teams: Red Team and Blue Team. Each team chooses a Spymaster; the rest are Operatives.
+- Place the 25 codename cards on the table in a 5x5 grid.
+- The Spymasters take the key card (shows which codenames belong to Red Team, Blue Team, Neutral, and the Assassin). Keep the key card hidden from Operatives.
+- Red Team goes first (unless agreed otherwise).
+
+### 3. Gameplay
+#### 3.1 Spymaster’s Turn
+- The Spymaster gives a **one-word clue** and a **number** (e.g., "Ocean: 2").
+- The clue must relate to the meanings of their team’s agents (codenames) without being too direct.
+- The number indicates how many of their team’s agents the clue applies to.
+- Clues cannot be:
+  - A codename on the board.
+  - A part of a codename (e.g., "car" for "Carrot" is invalid).
+  - A homophone of a codename.
+  - Multiple words (only one word allowed for the clue).
+
+#### 3.2 Operatives’ Turn
+- The Operatives discuss the clue and select one or more codenames (up to the number given by the Spymaster, plus one optional extra guess).
+- For each selected codename:
+  - If it’s their team’s agent: Place their team’s marker on it (continue guessing if they have remaining attempts).
+  - If it’s Neutral: No marker is placed, and their turn ends.
+  - If it’s the enemy team’s agent: Place the enemy’s marker on it, and their turn ends.
+  - If it’s the Assassin: Their team loses immediately.
+- After the Operatives finish guessing, the turn switches to the other team.
+
+### 4. Winning Conditions
+- A team wins if they identify **all their agents** before the other team.
+- A team loses if they select the **Assassin** at any point.
 
 ### Game Modes
 
@@ -141,6 +165,7 @@ This repository is provided for educational purposes. You may use and adapt it, 
 ---
 
 Enjoy the game — try AI vs AI to watch how the agents perform, or jump into a player mode to compete with or coach the AI!
+
 
 
 
